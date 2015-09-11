@@ -1,0 +1,307 @@
+*{
+	box-sizing: border-box;
+}
+
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	max-width: 75%;
+	margin: 0 auto;
+}
+
+
+.hide {
+	visibility: hidden;
+	display: none;
+}
+
+
+/* GLOBALS */
+
+h1, h2, h3, h4, figure li, time {
+	font-family: 'Teko', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 0 auto;
+	text-align: center;
+}
+
+a {
+	font-family: 'Teko', sans-serif;
+	font-weight: 300;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	text-decoration: none
+}
+
+p {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	font-size: 7.5em;
+	letter-spacing: .09em;
+	color:#fff;
+}
+
+h2 {
+	font-size: 2.5em;
+	letter-spacing: .07em;
+	color:#000;
+}
+
+h3{
+	font-size: 1.875em;
+	letter-spacing: .07em;	
+	color:#000;
+}
+
+h4 {
+	font-size: 1.5em;
+	letter-spacing: .06em;
+	color:#fff;
+}
+
+
+/* HEADER */
+.logo {
+	float: left;
+}
+
+.main-nav {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
+	color: #f63c3c;
+	float: right;
+	margin-top: 20px; /*????*/
+}
+
+.main-nav a {
+	font-family: 'Titillium Web', sans-serif;
+	color: #8c8c8c;
+	margin-left: 30px;
+	text-transform: capitalize;
+}
+
+.main-nav li {
+	display: inline-block;
+}
+
+.main-nav a:active {
+	color: #f63c3c;
+	padding: 15%;
+	border-bottom: 4px solid #f63c3c;
+}
+
+
+/* MAIN CAROUSEL */
+.main-carousel {
+	background: url(../img/maincarouselbg.jpg) center center no-repeat;	
+	background-size: cover;
+	text-align: center;
+	height: 800px;
+	position: relative;
+	margin-bottom: 3%;
+}
+
+.main-carousel div {
+	position: relative;
+	top: 20%;
+	margin: 0 auto;
+}
+
+.main-carousel p {
+	color: #c3bab4;
+	font-size:1.375em;
+	text-align: center; /*????*/
+	width: 70%; /*????*/
+	margin-bottom: 3%;
+}
+
+.main-carousel a {
+	display: inline-block;
+	background: #fff;
+	padding: 12px 45px;
+	font-size: 1.25em;
+	letter-spacing: .15em;
+	color:#000;
+}
+
+/* PAGINATION */
+.main-carousel nav ul li {
+	display: inline-block;
+	width: 28px;
+	height: 4px;
+	margin-right: .5%;
+	background: #8c8c8c;
+}
+
+.main-carousel nav {
+	position: relative;
+	margin-top: 25%;
+}
+
+.main-carousel .current {
+	background: #fff;
+}
+
+/* MY PROJECTS */
+.projects {
+	text-align: center;
+	width: 98%;
+	margin: 0 auto;
+}
+
+.projects article {
+	float: left;
+	width: 49.25%;
+	margin-right: 1.5%;
+}
+
+.projects article:nth-child(odd) {
+	margin-right: 0%;
+}
+
+.projects figure li{
+	font-size: 1.125em;
+	letter-spacing: .06em;
+	color: #fff;
+}
+
+.projects figure img {
+	width: 100%;
+	margin:3% 0%;
+}
+
+.projects p {
+	color: #8c8c8c;
+	margin-bottom: 3%;
+	width: 85%;
+}
+
+.projects>a {
+	display: inline-block;
+	color: #f63c3c;
+	font-size: 1.25em;
+	font-weight: 400;
+	letter-spacing: 0.125em;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #f63c3c;
+	margin: 2% 0;
+}
+
+/* PROJECT HOVER -- Meh, I tried (but failed) :(
+
+.projects article a:hover {
+background: #f63c3c;
+border: 2px solid black;
+}
+
+figure {
+	position: relative;
+	display: inline-block;
+}
+
+figcaption {
+    display: none;
+    position: absolute;
+    background-color: #f63c3c;
+}
+
+figure:hover img {
+    display:none;
+}
+
+figure:hover figcaption {
+    display: block;
+}
+*/
+
+
+/* CALL TO ACTION */
+
+.call-to-action {
+	text-align: center;
+	color: #fff;
+	background: #f63c3c;
+	padding: 40px;
+	margin: 3% 0% 0%;
+}
+
+.call-to-action h2 {
+	color: #fff;
+}
+
+.call-to-action p {
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 1%;
+	}
+
+.call-to-action a {
+	display: inline-block;
+	background: #fff;
+	color: #685157;
+	padding: 10px 50px;
+	font-size: 1.25em;
+	letter-spacing: .1em;
+}
+
+
+/* SOCIAL */
+
+.social h2 {
+	text-align: left;
+}
+
+.social p {
+	color: #555;
+	text-align: left;
+	margin-bottom: 4%;
+}
+
+.social li {
+	background: #30282a;
+	display: inline-block;
+	width: 22%;
+	padding: 30px 0;
+	text-align: center;
+	margin-right: 1.5%;	
+}
+
+.greybg {
+	background: #fafafa;	
+	padding: 3% 0%;
+}
+
+.social a {
+	color: #fff;
+	text-decoration: none;	
+}
+
+.fa-icon {
+	margin-bottom: 2%;
+	font-size: 1.5em;
+}
+
+/* FOOTER */
+
+footer p {
+	color: #818181;
+	text-align: left;
+	margin: 2% 0 3%;
+}
+
+
+
+
+
+
+
